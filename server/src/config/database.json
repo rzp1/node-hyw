@@ -1,9 +1,9 @@
 {
 	"development": {
 		"username": "root",
-		"password": "rzp0310",
+		"password": "***",
 		"database": "hyw",
-		"host": "39.108.213.139",
+		"host": "0.0.0.0",
 		"port": "3306",
 		"dialect": "mysql",
 		"timezone": "Asia/Shanghai",
