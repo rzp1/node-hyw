@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="apple-mobile-web-app-title" content="微货源">
+  <title>微商货源_微货源-微商货源网 专注高端 收录高质量货源 全网最大最权威微商货源网 微商创业货源网</title>
+  <meta name="keywords" content="微商货源,微商代理,微商货源代理,一件代发货源,懒微商" />
+  <meta name="description" content="" />
+  <meta name="author" content="order by dede58.com" />
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="MobileOptimized" content="320" />
+  <link rel="stylesheet" href="/statics/css/style.css">
+  <link rel="stylesheet" href="/statics/css/goods.css">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/statics/images/weishang/icon-144x144.png">
+</head>
+
+<body>
+  <div id="wrap" v-cloak>
+    <div class="head clearfix">
+      <div id="header">
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a href="/">首页</a></li>
+          <li class='navlihover'><a href='/goods/'>微商货源</a></li>
+          <li><a href="/wechat/">微信大全</a></li>
+          <li><a href="/school/">微商学院</a></li>
+          <li class="howto"><a href="/jprzhy/">发布货源</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="content clearfix">
+      <div class="sontype">
+        <ul>
+          <li v-for="(item,index) in huoyuanTypeList" :class="item.id === params.type_id ? 'lihover' : ''">
+            <a @click="getListByTypeId(item.id)" :title="item.name">{{item.name}}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="content clearfix">
+      <div class="breadcrumb mod">
+        <span>当前位置: <a href='/'>首页</a> > <a href='/wechat/'>微信大全</a> > </span>
+        <span class="update"><a href="http://wpa.qq.com/msgrd?v=3&uin=1702828444&site=qq&menu=yes" target="_blank">免费提交货源</a></span>
+      </div>
+      <div class="goods_all clearfix">
+        <div class="goods_title">
+          <h1>微商货源</h1>
+        </div>
+        <div class="goods_list clearfix">
+          <ul>
+            <li v-for="(item, _index) in huoyuanInfoList" @click="toDetail(item.id)">
+              <a :title="item.title" target="_blank">
+                <img :src="item.main_img">
+              </a>
+              <a :title="item.title" target="_blank">
+                <span class="hytitle">{{item.title}}</span>
+              </a>
+            </li>
+            <div class="ht"></div>
+          </ul>
+          <div class="page">
+            <li>首页</li>
+            <li v-for="(item, index) in Math.ceil(count/params.limit)" :class="item === params.page ? 'thisclass' : ''">
+              <template v-if="item === params.page">
+                {{item}}
+              </template>
+              <template v-else>
+                <a @click="changePage(item)">{{item}}</a>
+              </template>
+            </li>
+            <li><span class="pageinfo">共 <strong>{{Math.ceil(count/params.limit)}}</strong>页<strong>{{count}}</strong>条</span></li>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+    <div id="floatTools"></div>
+  </div>
+  <script src="/statics/js/jquery.min.js" type="text/javascript"></script>
+  <script src="/statics/js/vue.js" type="text/javascript"></script>
+  <script src="/statics/js/index.js" type="text/javascript"></script>
+  <script src="/statics/js/queries/getHuoyuanTypeList.js" type="text/javascript"></script>
+  <script src="/statics/js/queries/getHuoyuanInfoList.js" type="text/javascript"></script>
+  <script>
+    new Vue({
+      el: '#wrap',
+      data: {
+        huoyuanTypeList: [],
+        huoyuanInfoList: [],
+        count: 0,
+        params: {
+          page: 1,
+          limit: 12,
+          type: 0,
+          recommended_type: 1,
+          type_id: 0,
+          keys: ''
+        }
+      },
+      mounted() {
+        this.getHuoyuanType()
+        this.initGetList()
+      },
+      methods: {
+        getHuoyuanType() {
+          var that = this
+          getHuoyuanTypeList({
+            is_recommend: 0,
+            is_huoyuanList: 0
+          }, function (res) {
+            var resData = res.data.getHuoyuanTypeList
+            if (resData.code === 0) {
+              that.huoyuanTypeList = resData.data
+            }
+          })
+        },
+        initGetList() {
+          this.params.page = 1
+          this.params.type = 0
+          this.params.type_id = 0
+          if (qurl('type_id')) {
+            this.params.type = 2
+            this.params.type_id = Number(qurl('type_id'))
+          }
+          this.getList()
+        },
+        getList() {
+          var that = this
+          getHuoyuanInfoList(this.params, function (res) {
+            var resData = res.data.getHuoyuanInfoList
+            if (resData.code === 0) {
+              that.huoyuanInfoList = resData.data
+              that.count = resData.count
+            }
+          })
+        },
+        // 根据 类别 筛选
+        getListByTypeId(id) {
+          this.params.page = 1
+          this.params.type = 2
+          this.params.type_id = id
+          this.getList()
+        },
+        changePage(page) {
+          this.params.page = page
+          this.getList()
+        },
+        toDetail(id) {
+          window.open('./detail.html?id=' + id)
+        }
+      }
+
+    })
+  </script>
+</body>
+
+</html>

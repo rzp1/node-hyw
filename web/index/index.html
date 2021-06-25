@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="apple-mobile-web-app-title" content="微货源">
+  <title>微货源-微商货源网 专注高端 收录高质量货源 全网最大最权威微商货源网 微商创业货源网</title>
+  <meta name="description" content="微货源-微商电商货源网，本站专注高端，收录高质量货源，禁止假冒伪劣。本站集合了诚信的微信货源批发商家和公司，优质的微商货源代理，收录海量微信公众号和微信群二维码，提供大量微信营销及微信加人的方法及及微信群互动平台，让初入微商迅速地成长壮大。" />
+  <meta name="keywords" content="微货源,微商货源,微商货源网,微商代理,微商货源代理,微商怎么做,微信营销,微信推广,微信加人技巧,微信公众号,微信群,个人微信,微货源微商货源,微货源货源平台" />
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="MobileOptimized" content="320" />
+  <link rel="stylesheet" href="/statics/css/style.css">
+  <link rel="stylesheet" href="/statics/css/index.css">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/statics/images/weishang/icon-144x144.png">
+  <style>
+  </style>
+</head>
+
+<body>
+  <div id="wrap" v-cloak>
+    <div class="head clearfix">
+      <div id="header">
+      </div>
+      <div class="nav">
+        <ul>
+          <li class="navlihover"><a href="">首页</a></li>
+
+          <li><a href="/goods/">微商货源</a></li>
+
+          <li><a href="/wechat/">微信大全</a></li>
+
+          <li><a href="/school/">微商学院</a></li>
+
+          <li class="howto"><a href="/jprzhy/">发布货源</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="content clearfix">
+      <div class="tips mod">
+        <div class="event_index">
+          <div class="event_l"><a href="shechipin/1453.html" target="_blank"><img src="/statics/images/weishang/580x100.png"
+                height="100" width="580" alt="白云皮具城"></a></div>
+          <div class="event_r"><a href="hufupin/933.html" target="_blank"><img src="/statics/images/weishang/580x100.png"
+                height="100" width="580" alt="宜芙卡"></a></div>
+        </div>
+        <span>
+          <a href="http://wpa.qq.com/msgrd?v=3&uin=170282888&site=qq&menu=yes" target="_blank">
+            <font color="#00FF004">①货源收录提交请联系在线客服，点击这里</font>
+          </a>
+          <a href="http://wpa.qq.com/msgrd?v=3&uin=170282888&site=qq&menu=yes" target="_blank">
+            <font color="#FF0000">②货源置顶，广告位业务请咨询客服，点击这里</font>
+          </a>
+          <a href="" target="_blank">③加入微货源官方QQ群，点击这里</a><a target="_blank" href="#"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png"
+              alt="微信公众号 微商互粉" title="微信公众号 微商互粉"></a>
+        </span>
+        <span class="update"><a href="http://wpa.qq.com/msgrd?v=3&uin=170282888&site=qq&menu=yes" target="_blank">免费提交货源</a></span>
+      </div>
+      <div class="recommend mod">
+        <div class="title">
+          <h2>优质货源</h2>
+          <span>微货源精选优质推荐靠谱微信货源，微商代理们速来选择好货源！</span>
+        </div>
+        <div class="piclist clearfix">
+          <ul class="clearfix">
+            <li v-for="(_item, _index) in huoyuanInfoList" @click="toDetail(_item.id)">
+                <a :title="_item.title" target="_blank">
+                  <img :src="_item.main_img" :alt="_item.title"> </a>
+                  <div class="li_right">
+                    <span>{{_item.title}}</span>
+                  </div>
+                </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="recommend mod" v-for="(item,index) in huoyuanTypeList">
+        <div class="title">
+          <h2>{{item.name}}</h2>
+          <span></span>
+        </div>
+        <div class="piclist clearfix">
+          <ul class="clearfix">
+            <a href="/market/nvzhuang/">
+              <div class="fmimg">
+                <img alt="" :src="'/statics/images/index/id'+item.id+'.png'" style="height: 230px; width: 185px;">
+              </div>
+            </a>
+            <li v-for="(_item, _index) in item.huoyuanInfos">
+              <a href="http://www.juws.cn/market/nvzhuang/19971.html" target="_blank">
+                <img :src="_item.main_img" :alt="_item.title"> </a>
+              <div class="li_right">
+                <a href="http://www.juws.cn/market/nvzhuang/19971.html" target="_blank">
+                  <span>{{_item.title}}</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="news mod clearfix">
+        <div class="title">
+          <h2>微商资讯</h2>
+          <span></span>
+        </div>
+        <div class="news_col clearfix">
+          <div class="news_col_l clearfix">
+            <ul>
+              <li>
+                <a href="/school/news/129.html" target="_blank"><img src="/uploads/allimg/150608/1236434316_lit.jpg"
+                    alt="微商野蛮生长或迎大洗牌"><span>产业真相
+                    微商，一种基于微信实现商品的社交分享、熟人推荐与朋友圈展示的新商业</span></a>
+              </li>
+
+            </ul>
+          </div>
+          <div class="news_col_r">
+            <ul>
+              <li><a href="/school/news/128.html" target="_blank">【万色·资讯】微商时代，万色城新闻稿</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="event_r"><a href="hufupin/933.html" target="_blank"><img src="/statics/images/weishang/1200+100.jpg"
+            height="100" width="100%" alt="宜芙卡"></a></div>
+
+      <div class="link mod clearfix">
+        <div class="title">
+          <h2>友情链接</h2>
+          <span></span>
+        </div>
+        <div class="linklist">
+          <ul>
+
+            <li><a href='http://www.dede58.com/host/' target='_blank'>织梦主机</a> </li>
+
+            <li><a href='http://www.discuz58.com' target='_blank'>discuz模板</a> </li>
+
+            <li><a href='http://www.dede58.com' target='_blank'>织梦58</a> </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+    <div id="floatTools"></div>
+  </div>
+  <script src="/statics/js/jquery.min.js" type="text/javascript"></script>
+  <script src="/statics/js/vue.js" type="text/javascript"></script>
+  <script src="/statics/js/index.js" type="text/javascript"></script>
+  <script src="/statics/js/queries/getHuoyuanTypeList.js" type="text/javascript"></script>
+  <script src="/statics/js/queries/getHuoyuanInfoList.js" type="text/javascript"></script>
+
+  <script>
+    new Vue({
+      el: '#wrap',
+      data: {
+        huoyuanTypeList: [],
+        huoyuanInfoList: []
+      },
+      mounted() {
+        this.getHuoyuanType()
+        this.getHuoyuanInfoList()
+      },
+      methods: {
+        getHuoyuanType() {
+          var that = this
+          getHuoyuanTypeList({
+            is_recommend: 1,
+            is_huoyuanList: 1
+          }, function (res) {
+            var resData = res.data.getHuoyuanTypeList
+            if (resData.code === 0) {
+              that.huoyuanTypeList = resData.data
+            }
+          })
+        },
+        getHuoyuanInfoList() {
+          var that = this
+          getHuoyuanInfoList({
+            page: 1,
+            limit: 18,
+            type: 1,
+            recommended_type: 1,
+            type_id: 0,
+            keys: ''
+          }, function (res) {
+            var resData = res.data.getHuoyuanInfoList
+            if (resData.code === 0) {
+              that.huoyuanInfoList = resData.data
+            }
+          })
+        },
+        toDetail(id) {
+          window.open('./goods/detail.html?id=' + id)
+        }
+      }
+
+    })
+  </script>
+  <!--代码部分end-->
+
+</body>
+
+</html>

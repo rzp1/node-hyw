@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  background-color: #fff;
+  font: 14px/1.5 tahoma, arial, 'PingFang SC', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', 'Microsoft YaHei', \5b8b\4f53, sans-serif;
+  color: #333;
+}
+
+body {
+  scrollbar-face-color: #000000;
+  scrollbar-shadow-color: #2D2C4D;
+  scrollbar-highlight-color: #7D7E94;
+  scrollbar-3dlight-color: #7D7E94;
+  scrollbar-darkshadow-color: #2D2C4D;
+  scrollbar-track-color: #7D7E94;
+  scrollbar-arrow-color: #C1C1D1;
+}
+
+body,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+a,
+td {
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+pre {
+  white-space: pre-wrap !important;
+  word-wrap: break-word !important;
+}
+
+/*----------------------滚动条---------------------------------------------------------------------------------------------*/
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #e8e8e8;
+  border: none;
+  display: none;
+}
+
+/*  /deep/.el-autocomplete-suggestion {
+    div::-webkit-scrollbar-track {
+      display: none;
+    }
+  }*/
+*::-webkit-scrollbar-thumb {
+  background-color: #c0c0c0;
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #c0c0c0;
+  border-radius: 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* 省略 */
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.quill {
+  line-height: 1
+}
+#app {
+  width: 1200px;
+  margin: auto;
+}
+#root, #app, #index {
+ height: 100%;
+}
+/* #index {
+background: linear-gradient(to bottom, #fff, #16A085);
+} */
+*::-webkit-scrollbar {
+width: 6px;
+height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #e8e8e8;
+  border: none;
+  display: none;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #c0c0c0;
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #c0c0c0;
+  border-radius: 10px;
+}
+:global {
+  .ant-layout.ant-layout-has-sider {
+    height: 98%;
+  }
+}  

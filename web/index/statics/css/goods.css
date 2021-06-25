@@ -1,0 +1,389 @@
+@media screen and (min-width: 1200px){
+	/*货源列表页开始*/
+	.content .goods_yx h2{display: block; font-size: 18px; color: #000; background: url(../images/weishang/colico/you.png) no-repeat top left; padding-left: 26px;}
+    .content .goods_yx .piclist{overflow: hidden; width: 100%;}
+	.content .goods_yx .piclist ul{padding-top: 10px;}
+	.content .goods_yx .piclist ul li{float: left; margin-right: 20px; position: relative; overflow: hidden; margin-bottom: 10px;}
+	.content .goods_yx .piclist ul .last{margin-right: 0;}
+	.content .goods_yx .piclist ul li img{float: left; width: 180px; height: 130px;}
+	.content .goods_yx .piclist ul li i{position: absolute; top: 0px; right: 0px; background: url(../images/weishang/yx_ico.png) no-repeat; width: 46px; height: 46px;}
+	.content .goods_yx .piclist ul li a:hover img{}
+	.content .goods_yx .piclist ul li a span{height:30px;display: block; text-align: center; width: 180px; background: #16A085; color: #fff;float:left;}
+	.content .goods_yx .piclist ul li a:hover span{background: #138D77; color: #fff;}
+         .content .goods_yx .cert_more{text-align: center; margin-top: 10px; background: #16A085; color: #ffffff; cursor: pointer}
+	.content .goods_all{width: 1180px; margin: 0 auto; padding-bottom: 10px;}
+	.content .goods_all .goods_title{border-bottom: 1px solid #d3d3d3; padding-bottom: 2px;}
+	.content .goods_all .goods_title h1{display: block; font-size: 18px; color: #000; background: url(../images/weishang/colico/2.png) no-repeat top left; padding-left: 26px;}
+	.content .goods_all .goods_list{padding-top: 10px; width: 100%; float: left;}
+	/*.content .goods_all .goods_list ul li{float: left; margin-right: 25px; width: 214px; height: 90px; overflow: hidden; position: relative;}*/
+        .content .goods_all .goods_list ul li{float: left; margin-right: 10px; width: 184px;  overflow: hidden; position: relative;border: 1px solid #d5dcdc;background-color: #FFFFFF;margin-bottom: 10px;border-radius: 4px; cursor: pointer;}       
+	.content .goods_all .goods_list ul .last{margin-right: 10px;}
+	/*.content .goods_all .goods_list ul li img{float: left; width: 20px; height: 20px; border-radius: 10px;}*/
+        .content .goods_all .goods_list ul li img{float: left; width: 160px; height: 150px; border-radius: 10px;padding: 10px 10px;}
+	.content .goods_all .goods_list ul li .hytitle{display: block; padding-left: 5px; color: #2a2a2a; height: 20px; overflow: hidden; line-height: 20px;padding-top: 0px;margin: 10px 10px;}
+	.content .goods_all .goods_list ul li .hytitle_cert{display: block; padding-left: 5px; color: #f76729; font-size: 16px; height: 20px; overflow: hidden; line-height: 20px;}
+       .content .goods_all .goods_list ul li .dltitle{padding: 0 0; color: #FF0033;  overflow: hidden; background-color: #ffffff;margin:0px 0px;;height: 28px;text-align: center;margin: 0 80px;border-radius: 50px;}
+	/*.content .goods_all .goods_list ul li .hyd{font-size: 12px; color: #666666; display: block; height: 68px; overflow: hidden; padding-top: 6px; line-height: 21px;}*/
+        .content .goods_all .goods_list ul li .hyd{font-size: 12px; color: #666666; display: block; height: 68px; overflow: hidden; padding-top: 6px; line-height: 21px;margin: 0 10px;}
+       .content .goods_all .goods_list ul li .dlj{font-size: 16px; color: #EF0808; display: block; overflow: hidden; background-color: #ffffff;height: 30px;text-align: left;margin: 0 10px;}
+	.content .goods_all .goods_list ul li a:hover .hytitle{color: #0f9425;}
+	.content .goods_all .goods_list .ht{clear: both; border-bottom: 1px dashed #cccccc; margin-bottom: 15px; padding-top: 10px;}
+	.content .goods_all .side{width: 230px; float: right; border-left: 1px solid #d3d3d3; padding-left: 5px;}
+	.content .goods_all .side .event_side{margin-left: 10px; margin-top: 10px;}
+	.content .goods_all .list_side h3{margin-top: 5px; margin-left: 10px; color: #16A085;font-size: 15px; font-weight:bold;}
+	.content .goods_all .list_side ul{padding-left: 10px; padding-bottom: 10px;}
+	/*.content .goods_all .list_side ul li{list-style:square inside url(../images/weishang/arrow.png); font-size: 13px;}*/
+        .content .goods_all .list_side ul li{font-size: 13px;}
+        .content .goods_all .list_side ul .rightimg{width: 220px;height:100px;}
+	.content .goods_all .list_side ul li a{color: #2a2a2a;}
+	.content .goods_all .list_side ul li a:hover{color: #16A085; text-decoration: none;}
+        .content .show_goods_yx .right .sub_tit {height: 40px;font-size: 16px;line-height: 40px;color: #138d77;border-bottom: 1px dashed #d3d3d3;padding: 0 15px;overflow: hidden;margin-bottom: 10px;font-weight: bold;}  
+	/*货源列表页结束*/
+	
+	/*认证货源展示页开始*/
+	.content .show_goods_yx{}
+	.content .show_goods_yx h2{display: block; font-size: 18px; color: #000; background: url(../images/weishang/colico/you.png) no-repeat top left; padding-left: 26px;}
+	.content .show_goods_yx .pic_show{margin-top: 10px; width: 420px; border-right: 1px dashed #d3d3d3; float: left; height:410px; position: relative;}
+	.content .show_goods_yx .pic_show i{position: absolute; top: 0px; right: 20px; background: url(../images/weishang/yx_ico.png) no-repeat; width: 46px; height: 46px;}
+    .content .show_goods_yx .pic_show img{width: 400px; height:400px;}
+	.content .show_goods_yx .detail{margin-top: 10px; width: 750px; float: right;}
+	.content .show_goods_yx .detail h1{color: #000; font-size: 18px;  padding-left: 65px; background: url(../images/weishang/certico.jpg) center left no-repeat;}
+	.content .show_goods_yx .detail .description{display:block; padding-top:8px;height:0px; overflow:hidden;font-size: 15px;}
+	.content .show_goods_yx .detail .count{background: #f5f5f5; margin-top: 10px; border-radius:5px; font-size: 15px;}
+	.content .show_goods_yx .detail .count ul{padding: 5px 10px; height: 52px;}
+	.content .show_goods_yx .detail .count ul li{float: left; width: 160px; text-align: center; border-right: 1px dashed #d3d3d3;}
+	.content .show_goods_yx .detail .count ul li.last{border:none;}
+	.content .show_goods_yx .detail .count ul li span{font-weight: bold; color: #FF5E52;}
+	.content .show_goods_yx .detail .count ul li a{font-weight: bold; color: #FF5E52;}
+	.content .show_goods_yx .detail .count ul #favorite a{font-weight: bold; color: #FF5E52;}
+	.content .show_goods_yx .detail .contact{margin-top: 12px;}
+	.content .show_goods_yx .detail .contact .wxcode{float: left;}
+    .content .show_goods_yx .detail .contact .wxcode img{width: 200px; height: 200px;border: 1px solid #d3d3d3;}
+	.content .show_goods_yx .detail .contact .contact_info{float:right;width:540px;border-radius:5px; height:250px; font-size:14px;overflow-y: scroll;}
+	.content .show_goods_yx .detail .contact .contact_info p{line-height:22px;}
+        .content .show_goods_yx .detail .contact .contact_info p.dllc{ margin-top:5px;font-weight:bold;color:#CF9566;}
+	.content .show_goods_yx .detail .contact .contact_info p.gfrz{ margin-top:5px;font-weight:bold;color:#FF5E52;}
+	.content .show_goods_yx .detail .contact .contact_info p.gfrz{ margin-top:5px;font-weight:bold;color:#FF5E52;}
+	.content .show_goods_yx .detail .contact .contact_info a{color:#FF5E52;}
+	.content .show_goods_yx .detail .contact .share{float: right; width:324px; padding-top:3px;}
+	.content .show_goods_yx .detail .contact .share .bdshare-button-style0-24 span{float:left; font-size:15px;line-height:35px;padding-right:5px;}
+	.content .show_goods_yx .detail .contact .share .bdshare-button-style0-24 a{margin-right: 5px;background: url(../images/weishang/share.png);cursor: pointer;margin-bottom: -8px;opacity: .8;}
+	.content .show_goods_yx .detail .contact .share .bdshare-button-style0-24 a.bds_tsina {background-position: 0 0;}
+	.content .show_goods_yx .detail .contact .share .bdshare-button-style0-24 a.bds_weixin {background-position: 0 -32px;}
+	.content .show_goods_yx .detail .contact .share .bdshare-button-style0-24 a.bds_qzone {background-position: 0 -65px;}
+	.content .show_goods_yx .detail .contact .share .bdshare-button-style0-24 a.bds_sqq {background-position: 0 -98px;}
+	.content .show_goods_yx .detail .contact .share .bdshare-button-style0-24 a.bds_tqq {background-position: 0 -163px;}
+	.content .show_goods_yx .detail .contact .share .bdshare-button-style0-24 a.bds_renren {background-position: 0 -131px;}
+	.content .show_goods_yx .detail .contact .share .bdshare-button-style0-24 a.bds_douban {background-position: 0 -196px;}
+	.content .show_goods_yx .detail .contact .share .bdshare-button-style0-24 a.bds_fbook {background-position: 0 -226px;}
+	.content .show_goods_yx .detail .contact .share .bdshare-button-style0-24 a.bds_more {background-position: 0 -256px;}
+	.content .show_goods_yx .bk{margin-top: 10px; border-top: 1px dashed #d3d3d3; float: left; width: 100%; margin-bottom: 10px;}
+	.content .show_goods_yx .more_detail{float: left; padding-top: 10px; padding-bottom: 20px; width: 935px; font-size: 15px;border-right: 1px dashed #d3d3d3; padding-right:10px;line-height: 28px;margin: auto;}
+	.content .show_goods_yx .more_detail img{padding-bottom: 10px; max-width:720px;}
+	.content .show_goods_yx .right{width: 230px; float: right;}
+	.content .show_goods_yx .right ul.piclist li{margin-bottom: 10px;margin-left: 12px; overflow: hidden}
+	.content .show_goods_yx .right ul.piclist li img{float: left; width: 210px; height:152px;}
+	.content .show_goods_yx .right ul.piclist li a:hover img{}
+	.content .show_goods_yx .right ul.piclist li a span{display: block; text-align: center; width: 210px; background: #16A085; color: #fff; height:30px;}
+	.content .show_goods_yx .right ul.piclist li a:hover span{background: #16A085; color: #fff;}
+	.content .show_goods_yx .right h3{margin-top: 5px; margin-left: 12px; color: #138D77;font-size: 15px; font-weight:bold;}
+	.content .show_goods_yx .right ul.txtlist{padding-left: 10px; padding-bottom: 10px;}
+	.content .show_goods_yx .right ul.txtlist li{list-style:square inside url(../images/weishang/arrow.png); font-size: 13px;}
+	.content .show_goods_yx .right ul.txtlist li a{color: #2a2a2a;}
+	.content .show_goods_yx .right ul.txtlist li a:hover{color: #16A085; text-decoration: none;}
+	/*认证货源展示页结束*/
+	
+	/*普通货源展示页开始*/
+	.content .show_goods_pt{}
+	.content .show_goods_pt h2{display: block; font-size: 18px; color: #000; font-family: 'Microsoft Yahei'; background: url(../images/weishang/colico/2.png) no-repeat top left; padding-left: 26px;}
+	.content .show_goods_pt .pic_show{margin-top: 10px; width: 297px; border-right: 1px dashed #d3d3d3; float: left;}
+    .content .show_goods_pt .pic_show img{width: 277px; height: 200px;}
+	.content .show_goods_pt .detail{margin-top: 10px; width: 863px; float: right;}
+	.content .show_goods_pt .detail h1{color: #000; font-size: 16px; font-weight: bold;}
+	.content .show_goods_pt .detail .description{height:126px; display:block; overflow:hidden;}
+	.content .show_goods_pt .detail .description .share{float: right; width:324px; padding-top:15px;}
+	.content .show_goods_pt .detail .description .share .bdshare-button-style0-24 span{float:left; font-size:15px;line-height:35px;padding-right:5px;}
+	.content .show_goods_pt .detail .description .share .bdshare-button-style0-24 a{margin-right: 5px;background: url(../images/weishang/share.png);cursor: pointer;margin-bottom: -8px;opacity: .8;}
+	.content .show_goods_pt .detail .description .share .bdshare-button-style0-24 a.bds_tsina {background-position: 0 0;}
+	.content .show_goods_pt .detail .description .share .bdshare-button-style0-24 a.bds_weixin {background-position: 0 -32px;}
+	.content .show_goods_pt .detail .description .share .bdshare-button-style0-24 a.bds_qzone {background-position: 0 -65px;}
+	.content .show_goods_pt .detail .description .share .bdshare-button-style0-24 a.bds_sqq {background-position: 0 -98px;}
+	.content .show_goods_pt .detail .description .share .bdshare-button-style0-24 a.bds_tqq {background-position: 0 -163px;}
+	.content .show_goods_pt .detail .description .share .bdshare-button-style0-24 a.bds_renren {background-position: 0 -131px;}
+	.content .show_goods_pt .detail .description .share .bdshare-button-style0-24 a.bds_douban {background-position: 0 -196px;}
+	.content .show_goods_pt .detail .description .share .bdshare-button-style0-24 a.bds_fbook {background-position: 0 -226px;}
+	.content .show_goods_pt .detail .description .share .bdshare-button-style0-24 a.bds_more {background-position: 0 -256px;}
+	.content .show_goods_pt .detail .contact{background: #f5f5f5; margin-top: 5px; border-radius:5px;}
+	.content .show_goods_pt .detail .contact ul{padding: 5px 10px; height: 23px;}
+	.content .show_goods_pt .detail .contact ul li{float: left; width: 165px; text-align: center; border-right: 1px dashed #d3d3d3;}
+	.content .show_goods_pt .detail .contact ul li.last{border:none;}
+	.content .show_goods_pt .detail .contact ul li span{font-weight: bold; color: #f76729;}
+	.content .show_goods_pt .detail .contact ul li span a{color: #f76729;}
+	.content .show_goods_pt .bk{margin-top: 10px; border-top: 1px dashed #d3d3d3; float: left; width: 100%; margin-bottom: 10px;}
+	.content .show_goods_pt .more_detail{float: left; padding-top: 10px; padding-bottom: 20px; width: 935px; font-size: 15px;border-right: 1px dashed #d3d3d3; padding-right:10px;line-height: 28px;}
+	.content .show_goods_pt .more_detail img{padding-bottom: 10px; max-width: 720px;}
+	.content .show_goods_pt .right{width: 230px; float: right; }
+	.content .show_goods_pt .right ul.piclist li{margin-bottom: 10px;margin-left: 12px; overflow: hidden}
+	.content .show_goods_pt .right ul.piclist li img{float: left; width: 210px; height:152px;}
+	.content .show_goods_pt .right ul.piclist li a:hover img{}
+	.content .show_goods_pt .right ul.piclist li a span{display: block; text-align: center; width: 210px; background: #16A085; color: #fff; height:175px;}
+	.content .show_goods_pt .right ul.piclist li a:hover span{background: #138D77; color: #fff;}
+	.content .show_goods_pt .right h3{margin-top: 5px; margin-left: 12px; color: #16A085;font-size: 15px; font-weight:bold;}
+	.content .show_goods_pt .right ul.txtlist{padding-left: 10px; padding-bottom: 10px;}
+	.content .show_goods_pt .right ul.txtlist li{list-style:square inside url(../images/weishang/arrow.png); font-size: 13px;}
+	.content .show_goods_pt .right ul.txtlist li a{color: #2a2a2a;}
+	.content .show_goods_pt .right ul.txtlist li a:hover{color: #16A085; text-decoration: none;}
+	/*普通货源展示页结束*/
+}
+@media screen and (max-width: 640px){
+	/*货源列表页开始*/
+        /*.right{display:none;}*/
+	.content .goods_yx h2{display: block; font-size: 18px; color: #000; background: url(../images/weishang/colico/you.png) no-repeat top left; padding-left: 26px;}
+         .content .goods_yx .piclist{overflow: hidden;}
+	.content .goods_yx .piclist ul{padding-top: 10px;}
+	.content .goods_yx .piclist ul li{position: relative; overflow: hidden;width: 46%;margin:5px 2%;float: left;}
+	.content .goods_yx .piclist ul .last{}
+	.content .goods_yx .piclist ul li img{width: 100%;vertical-align: bottom;height:160px}
+	.content .goods_yx .piclist ul li i{position: absolute; top: 0px; right: 0px; background: url(../images/weishang/yx_ico.png) no-repeat; width: 46px; height: 46px;}
+	.content .goods_yx .piclist ul li a:hover img{}
+	.content .goods_yx .piclist ul li a span{display: block; text-align: center; background: #16A085; color: #fff;width: 100%;font-size:12px;height: 2em;overflow: hidden;}
+	.content .goods_yx .piclist ul li a:hover span{background: #138D77; color: #fff;}
+    .content .goods_yx .cert_more{text-align: center; margin-top: 10px; background: #16A085; color: #ffffff; cursor: pointer}
+	.content .goods_all{width:100%;margin: 0 0; padding-bottom: 10px;}
+	.content .goods_all .goods_title{border-bottom: 1px solid #d3d3d3; padding-bottom: 2px;}
+	.content .goods_all .goods_title h1{display: block; font-size: 18px; color: #000;}
+	.content .goods_all .goods_list{width:96%;margin: 2%;}
+        .content .goods_all .goods_list ul li{width:46%;float:left;position: relative; overflow: hidden;text-align: center;margin:1% 2%; cursor: pointer;}
+	.content .goods_all .goods_list ul .last{margin-right: 0;}
+	.content .goods_all .goods_list ul li img{width:100%;vertical-align: bottom;height:150px;}
+        .content .goods_all .goods_list ul li .hytitle{display: block; /* padding-left: 5px; */ color: #ffffff; font-size: 14px; height: 22px; overflow: hidden; line-height: 20px;}
+	.content .goods_all .goods_list ul li .hytitle_cert{display: block; padding-left: 5px; color: #f76729; font-size: 14px; height: 20px; overflow: hidden; line-height: 20px;}
+	.content .goods_all .goods_list ul li .hyd{font-size: 12px; color: #666666; display: block; overflow: hidden; padding-top: 6px; line-height: 21px;height: 20px;}	
+        .content .goods_all .goods_list ul li .dlj{ text-align: left;padding-left: 0px;background-color: #FFFFFF;color: #DE0606;height: 30px;font-size: 16px;}
+        .content .goods_all .goods_list ul li a span{display: inline-block; text-align: center; width: 100%; background:#16A085; color: #fff;font-size: 12px;overflow: hidden;height: 2em;}
+	.content .goods_all .goods_list ul li .hyd{font-size: 12px; color: #666666; display: block; overflow: hidden; padding-top: 6px; line-height: 21px;}
+	.content .goods_all .goods_list ul li a:hover .hytitle{color: #ffffff;}
+	.content .goods_all .goods_list .ht{clear: both; border-bottom: 1px dashed #cccccc; margin-bottom: 15px; padding-top: 10px;}
+	.content .goods_all .side{display: none;}
+        .content .show_goods_yx .right .sub_tit {height: 40px;font-size: 16px;line-height: 40px;color: #138d77;border-bottom: 1px dashed #d3d3d3;padding: 0 15px;overflow: hidden;margin-bottom: 10px;font-weight: bold;}  
+	/*货源列表页结束*/
+	
+	/*认证货源展示页开始*/
+	.content .show_goods_yx{width: 100%;margin: auto;}
+	.content .show_goods_yx h2{display: block; font-size: 18px; color: #000; background: url(../images/weishang/colico/you.png) no-repeat top left; padding-left: 26px;}
+	.content .show_goods_yx .pic_show{width: 95%; position: relative;margin:10px auto;}
+	.content .show_goods_yx .pic_show i{position: absolute; top: 0px; right:0px; background: url(../images/weishang/yx_ico.png) no-repeat; width: 46px; height: 46px;}
+    .content .show_goods_yx .pic_show img{width:100%;}
+	.content .show_goods_yx .detail{margin:10px 2.5%;}
+	.content .show_goods_yx .detail h1{color: #000; font-size: 18px; padding-left: 4em; background: url(../images/weishang/certico.jpg) center left no-repeat;}
+	.content .show_goods_yx .detail .description{display:block; padding-top:8px;height:0px; overflow:hidden;font-size: 15px;}
+	.content .show_goods_yx .detail .count{ color:#fff;}
+	.content .show_goods_yx .detail .count ul{height: 23px;}
+	.content .show_goods_yx .detail .count ul li{float: left; width:100%; text-align: center;background: #16A085; margin-top: 5px; border-radius:5px;}
+	.content .show_goods_yx .detail .count ul li.last{display: none;}
+	.content .show_goods_yx .detail .count ul li span{font-weight: bold; color: #fff;}
+	.content .show_goods_yx .detail .count ul li a{font-weight: bold; color: #fff;}
+	.content .show_goods_yx .detail .count ul #favorite a{font-weight: bold; color: #FF5E52;}
+	.content .show_goods_yx .detail .contact{margin-top: 12px;}
+	.content .show_goods_yx .detail .contact .wxcode{width: 100%;}
+    .content .show_goods_yx .detail .contact .wxcode img{width: 99%;border: 1px solid #d3d3d3;}
+	.content .show_goods_yx .detail .contact .contact_info{width: 100%;border-radius:5px; font-size:14px;}
+	.content .show_goods_yx .detail .contact .contact_info p{line-height:22px;}
+         .content .show_goods_yx .detail .contact .contact_info p.dllc{ margin-top:5px;font-weight:bold;color:#CF9566;}
+	.content .show_goods_yx .detail .contact .contact_info p.gfrz{ margin-top:5px;font-weight:bold;color:#FF5E52;}
+	.content .show_goods_yx .detail .contact .contact_info a{color:#FF5E52;}
+	.content .show_goods_yx .detail .contact .share{width: 100%; padding-top:3px;}
+	.content .show_goods_yx .detail .contact .share .bdshare-button-style0-24 span{float:left; font-size:15px;line-height:35px;padding-right:5px;}
+	.content .show_goods_yx .detail .contact .share .bdshare-button-style0-24 a{margin-right: 5px;background: url(../images/weishang/share.png);cursor: pointer;margin-bottom: -8px;opacity: .8;}
+	.content .show_goods_yx .detail .contact .share .bdshare-button-style0-24 a.bds_tsina {background-position: 0 0;}
+	.content .show_goods_yx .detail .contact .share .bdshare-button-style0-24 a.bds_weixin {background-position: 0 -32px;}
+	.content .show_goods_yx .detail .contact .share .bdshare-button-style0-24 a.bds_qzone {background-position: 0 -65px;}
+	.content .show_goods_yx .detail .contact .share .bdshare-button-style0-24 a.bds_sqq {background-position: 0 -98px;}
+	.content .show_goods_yx .detail .contact .share .bdshare-button-style0-24 a.bds_tqq {background-position: 0 -163px;}
+	.content .show_goods_yx .detail .contact .share .bdshare-button-style0-24 a.bds_renren {background-position: 0 -131px;}
+	.content .show_goods_yx .detail .contact .share .bdshare-button-style0-24 a.bds_douban {background-position: 0 -196px;}
+	.content .show_goods_yx .detail .contact .share .bdshare-button-style0-24 a.bds_fbook {background-position: 0 -226px;}
+	.content .show_goods_yx .detail .contact .share .bdshare-button-style0-24 a.bds_more {background-position: 0 -256px;}
+	.content .show_goods_yx .bk{margin-top: 10px; border-top: 1px dashed #d3d3d3; float: left; width: 100%; margin-bottom: 10px;}
+	.content .show_goods_yx .more_detail{padding-top: 10px; padding-bottom: 20px; width: 95%; font-size: 15px; line-height: 28px;margin: auto;}
+	.content .show_goods_yx .more_detail img{padding-bottom: 10px; max-width: 100%;}
+        .content .show_goods_yx .right{width: 97%;margin: auto;}
+	.content .show_goods_yx .right ul.piclist li{margin-bottom: 10px;width: 48%;float: left;margin: 3px; overflow: hidden; }
+	.content .show_goods_yx .right ul.piclist li img{width: 100%;vertical-align:bottom;height:118px;}
+	.content .show_goods_yx .right ul.piclist li a:hover img{}
+	.content .show_goods_yx .right ul.piclist li a span{display: block; text-align: center;background: #16A085; color: #fff;height:24px;}
+	.content .show_goods_yx .right ul.piclist li a:hover span{background: #138D77; color: #fff;}
+	.content .show_goods_yx .right h3{display: none;}
+	.content .show_goods_yx .right ul.txtlist{display: none;}
+	/*认证货源展示页结束*/
+	
+	/*普通货源展示页开始*/
+	.content .show_goods_pt{width: 100%;}
+	.content .show_goods_pt h2{display: block; font-size: 18px; color: #000; font-family: 'Microsoft Yahei'; background: url(../images/weishang/colico/2.png) no-repeat top left; padding-left: 26px;}
+	.content .show_goods_pt .pic_show{margin-top: 10px;text-align: center;}
+    .content .show_goods_pt .pic_show img{width: 95%;}
+	.content .show_goods_pt .detail{margin-top: 10px;width: 95%; margin: 0 auto;}
+	.content .show_goods_pt .detail h1{color: #000; font-size: 16px; font-weight: bold;}
+	.content .show_goods_pt .detail .description{ display:block; overflow:hidden;}
+	.content .show_goods_pt .detail .description .share{width:95%; padding-top:15px;}
+	.content .show_goods_pt .detail .description .share .bdshare-button-style0-24 span{float:left; font-size:15px;line-height:35px;padding-right:5px;}
+	.content .show_goods_pt .detail .description .share .bdshare-button-style0-24 a{margin-right: 5px;background: url(../images/weishang/share.png);cursor: pointer;margin-bottom: -8px;opacity: .8;}
+	.content .show_goods_pt .detail .description .share .bdshare-button-style0-24 a.bds_tsina {background-position: 0 0;}
+	.content .show_goods_pt .detail .description .share .bdshare-button-style0-24 a.bds_weixin {background-position: 0 -32px;}
+	.content .show_goods_pt .detail .description .share .bdshare-button-style0-24 a.bds_qzone {background-position: 0 -65px;}
+	.content .show_goods_pt .detail .description .share .bdshare-button-style0-24 a.bds_sqq {background-position: 0 -98px;}
+	.content .show_goods_pt .detail .description .share .bdshare-button-style0-24 a.bds_tqq {background-position: 0 -163px;}
+	.content .show_goods_pt .detail .description .share .bdshare-button-style0-24 a.bds_renren {background-position: 0 -131px;}
+	.content .show_goods_pt .detail .description .share .bdshare-button-style0-24 a.bds_douban {background-position: 0 -196px;}
+	.content .show_goods_pt .detail .description .share .bdshare-button-style0-24 a.bds_fbook {background-position: 0 -226px;}
+	.content .show_goods_pt .detail .description .share .bdshare-button-style0-24 a.bds_more {background-position: 0 -256px;}
+	.content .show_goods_pt .detail .contact{color: #fff;}
+	.content .show_goods_pt .detail .contact ul{height: 23px;margin-top: 10px;}
+	.content .show_goods_pt .detail .contact ul li{float: left; width:100%; text-align: center;background: #16A085; margin-top: 5px; border-radius:5px;}
+	.content .show_goods_pt .detail .contact ul li.last{display: none;}
+	.content .show_goods_pt .detail .contact ul li span{font-weight: bold; color: #fff;}
+	.content .show_goods_pt .detail .contact ul li span a{color: #fff;}
+	.content .show_goods_pt .bk{margin-top:30px; border-top: 1px dashed #d3d3d3; float: left; width: 100%;}
+	.content .show_goods_pt .more_detail{ padding-top: 10px; padding-bottom: 20px; width: 95%; font-size: 15px;line-height: 28px;margin: 0 auto;}
+	.content .show_goods_pt .more_detail img{padding-bottom: 10px;max-width: 100%;}
+	.content .show_goods_pt .right{width: 97%;margin: auto;}
+	.content .show_goods_pt .right ul.piclist li{margin-bottom: 10px;width: 48%;margin: 2px;float: left; overflow: hidden}
+	.content .show_goods_pt .right ul.piclist li img{ float: left;width: 100%;}
+	.content .show_goods_pt .right ul.piclist li a:hover img{}
+	.content .show_goods_pt .right ul.piclist li a span{display: block; text-align: center;width: 100%; background: #16A085; color: #fff;}
+	.content .show_goods_pt .right ul.piclist li a:hover span{background: #138D77; color: #fff;}
+	.content .show_goods_pt .right h3{display: none;}
+	.content .show_goods_pt .right ul.txtlist{display: none;}
+	/*普通货源展示页结束*/
+}
+
+@media screen and (min-width: 640px) and (max-width: 1200px){
+	/*货源列表页开始*/
+	.content .goods_yx h2{display: block; font-size: 18px; color: #000; background: url(../images/weishang/colico/you.png) no-repeat top left; padding-left: 26px;}
+    .content .goods_yx .piclist{overflow: hidden; width: 100%;}
+	.content .goods_yx .piclist ul{padding-top: 10px;}
+	.content .goods_yx .piclist ul li{float: left; margin-right: 20px; position: relative; overflow: hidden; margin-bottom: 10px;}
+	.content .goods_yx .piclist ul .last{margin-right: 0;}
+	.content .goods_yx .piclist ul li img{float: left; width: 180px; height: 130px;}
+	.content .goods_yx .piclist ul li i{position: absolute; top: 0px; right: 0px; background: url(../images/weishang/yx_ico.png) no-repeat; width: 46px; height: 46px;}
+	.content .goods_yx .piclist ul li a:hover img{}
+	.content .goods_yx .piclist ul li a span{height:30px;display: block; text-align: center; width: 180px; background: #16A085; color: #fff;float:left;}
+	.content .goods_yx .piclist ul li a:hover span{background: #138D77; color: #fff;}
+    .content .goods_yx .cert_more{text-align: center; margin-top: 10px; background: #16A085; color: #ffffff; cursor: pointer}
+	.content .goods_all{width: 1180px; margin: 0 auto; padding-bottom: 10px;}
+	.content .goods_all .goods_title{border-bottom: 1px solid #d3d3d3; padding-bottom: 2px;}
+	.content .goods_all .goods_title h1{display: block; font-size: 18px; color: #000; background: url(../images/weishang/colico/2.png) no-repeat top left; padding-left: 26px;}
+	.content .goods_all .goods_list{padding-top: 10px; width:100%; float: left;}     
+        .content .goods_all .goods_list ul li{float: left; margin-right: 10px; width: 224px; height: 385px; overflow: hidden; position: relative;border: 1px solid #d5dcdc;background-color: #FFFFFF;margin-bottom: 10px; cursor: pointer;}       
+	.content .goods_all .goods_list ul .last{margin-right: 10px;}	
+        .content .goods_all .goods_list ul li img{float: left; width: 200px; height: 200px; border-radius: 10px;padding: 10px 10px;}
+	.content .goods_all .goods_list ul li .hytitle{display: block; padding-left: 5px; color: #2a2a2a; font-size: 14px; height: 20px; overflow: hidden; line-height: 20px;padding-top: 0px;margin: 0 10px;}
+	.content .goods_all .goods_list ul li .hytitle_cert{display: block; padding-left: 5px; color: #f76729; font-size: 14px; height: 20px; overflow: hidden; line-height: 20px;}
+        .content .goods_all .goods_list ul li .dltitle{padding: 0 0; color: #FF0033; font-size: 15px; overflow: hidden; background-color: #ffffff;margin:0px 10px;;height: 28px;text-align: center;margin: 0 80px;border-radius: 50px;}
+        .content .goods_all .goods_list ul li .hyd{font-size: 12px; color: #666666; display: block; height: 68px; overflow: hidden; padding-top: 6px; line-height: 21px;margin: 0 10px;}
+       .content .goods_all .goods_list ul li .dlj{font-size: 16px; color: #EF0808; display: block; overflow: hidden; background-color: #ffffff;height: 30px;text-align: left;margin: 0 10px;}
+	.content .goods_all .goods_list ul li a:hover .hytitle{color: #0f9425;}
+	.content .goods_all .goods_list .ht{clear: both; border-bottom: 1px dashed #cccccc; margin-bottom: 15px; padding-top: 10px;}
+	.content .goods_all .side{width: 230px; float: right; border-left: 1px solid #d3d3d3; padding-left: 5px;}
+	.content .goods_all .side .event_side{margin-left: 10px; margin-top: 10px;}
+	.content .goods_all .list_side h3{margin-top: 5px; margin-left: 10px; color: #16A085;font-size: 15px; font-weight:bold;}
+	.content .goods_all .list_side ul{padding-left: 10px; padding-bottom: 10px;}
+	.content .goods_all .list_side ul li{list-style:square inside url(../images/weishang/arrow.png); font-size: 13px;}
+	.content .goods_all .list_side ul li a{color: #2a2a2a;}
+	.content .goods_all .list_side ul li a:hover{color: #16A085; text-decoration: none;}
+	/*货源列表页结束*/
+	
+	/*认证货源展示页开始*/
+	.content .show_goods_yx{}
+	.content .show_goods_yx h2{display: block; font-size: 18px; color: #000; background: url(../images/weishang/colico/you.png) no-repeat top left; padding-left: 26px;}
+	.content .show_goods_yx .pic_show{margin-top: 10px; width: 453px; border-right: 1px dashed #d3d3d3; float: left; height:311px; position: relative;}
+	.content .show_goods_yx .pic_show i{position: absolute; top: 0px; right: 23px; background: url(../images/weishang/yx_ico.png) no-repeat; width: 46px; height: 46px;}
+    .content .show_goods_yx .pic_show img{width: 430px; height:311px;}
+	.content .show_goods_yx .detail{margin-top: 10px; width: 703px; float: right;}
+	.content .show_goods_yx .detail h1{color: #000; font-size: 18px;  padding-left: 65px; background: url(../images/weishang/certico.jpg) center left no-repeat;}
+	.content .show_goods_yx .detail .description{display:block; padding-top:8px;height:0px; overflow:hidden;font-size: 15px;}
+	.content .show_goods_yx .detail .count{background: #f5f5f5; margin-top: 10px; border-radius:5px; font-size: 15px;}
+	.content .show_goods_yx .detail .count ul{padding: 5px 10px; height: 52px;}
+	.content .show_goods_yx .detail .count ul li{float: left; width: 135px; text-align: center; border-right: 1px dashed #d3d3d3;}
+	.content .show_goods_yx .detail .count ul li.last{border:none;}
+	.content .show_goods_yx .detail .count ul li span{font-weight: bold; color: #FF5E52;}
+	.content .show_goods_yx .detail .count ul li a{font-weight: bold; color: #FF5E52;}
+	.content .show_goods_yx .detail .count ul #favorite a{font-weight: bold; color: #FF5E52;}
+	.content .show_goods_yx .detail .contact{margin-top: 12px;}
+	.content .show_goods_yx .detail .contact .wxcode{float: left;}
+    .content .show_goods_yx .detail .contact .wxcode img{width: 200px; height: 200px;border: 1px solid #d3d3d3;}
+	.content .show_goods_yx .detail .contact .contact_info{float:right;width:480px;border-radius:5px; height:170px; font-size:14px;}
+	.content .show_goods_yx .detail .contact .contact_info p{line-height:22px;}
+        .content .show_goods_yx .detail .contact .contact_info p.dllc{ margin-top:5px;font-weight:bold;color:#CF9566;}
+	.content .show_goods_yx .detail .contact .contact_info p.gfrz{ margin-top:5px;font-weight:bold;color:#FF5E52;}
+	.content .show_goods_yx .detail .contact .contact_info a{color:#FF5E52;}
+	.content .show_goods_yx .detail .contact .share{float: right; width:324px; padding-top:3px;}
+	.content .show_goods_yx .detail .contact .share .bdshare-button-style0-24 span{float:left; font-size:15px;line-height:35px;padding-right:5px;}
+	.content .show_goods_yx .detail .contact .share .bdshare-button-style0-24 a{margin-right: 5px;background: url(../images/weishang/share.png);cursor: pointer;margin-bottom: -8px;opacity: .8;}
+	.content .show_goods_yx .detail .contact .share .bdshare-button-style0-24 a.bds_tsina {background-position: 0 0;}
+	.content .show_goods_yx .detail .contact .share .bdshare-button-style0-24 a.bds_weixin {background-position: 0 -32px;}
+	.content .show_goods_yx .detail .contact .share .bdshare-button-style0-24 a.bds_qzone {background-position: 0 -65px;}
+	.content .show_goods_yx .detail .contact .share .bdshare-button-style0-24 a.bds_sqq {background-position: 0 -98px;}
+	.content .show_goods_yx .detail .contact .share .bdshare-button-style0-24 a.bds_tqq {background-position: 0 -163px;}
+	.content .show_goods_yx .detail .contact .share .bdshare-button-style0-24 a.bds_renren {background-position: 0 -131px;}
+	.content .show_goods_yx .detail .contact .share .bdshare-button-style0-24 a.bds_douban {background-position: 0 -196px;}
+	.content .show_goods_yx .detail .contact .share .bdshare-button-style0-24 a.bds_fbook {background-position: 0 -226px;}
+	.content .show_goods_yx .detail .contact .share .bdshare-button-style0-24 a.bds_more {background-position: 0 -256px;}
+	.content .show_goods_yx .bk{margin-top: 10px; border-top: 1px dashed #d3d3d3; float: left; width: 100%; margin-bottom: 10px;}
+	.content .show_goods_yx .more_detail{float: left; padding-top: 10px; padding-bottom: 20px; width: 935px; font-size: 15px;border-right: 1px dashed #d3d3d3; padding-right:10px;line-height: 28px;margin: auto;}
+	.content .show_goods_yx .more_detail img{padding-bottom: 10px; max-width: 720px;}
+	.content .show_goods_yx .right{width: 230px; float: right;}
+	.content .show_goods_yx .right ul.piclist li{margin-bottom: 10px;margin-left: 12px; overflow: hidden}
+	.content .show_goods_yx .right ul.piclist li img{float: left; width: 210px; height:152px;}
+	.content .show_goods_yx .right ul.piclist li a:hover img{}
+	.content .show_goods_yx .right ul.piclist li a span{display: block; text-align: center; width: 210px; background: #16A085; color: #fff; height:30px;}
+	.content .show_goods_yx .right ul.piclist li a:hover span{background: #16A085; color: #fff;}
+	.content .show_goods_yx .right h3{margin-top: 5px; margin-left: 12px; color: #138D77;font-size: 15px; font-weight:bold;}
+	.content .show_goods_yx .right ul.txtlist{padding-left: 10px; padding-bottom: 10px;}
+	.content .show_goods_yx .right ul.txtlist li{list-style:square inside url(../images/weishang/arrow.png); font-size: 13px;}
+	.content .show_goods_yx .right ul.txtlist li a{color: #2a2a2a;}
+	.content .show_goods_yx .right ul.txtlist li a:hover{color: #16A085; text-decoration: none;}
+	/*认证货源展示页结束*/
+	
+	/*普通货源展示页开始*/
+	.content .show_goods_pt{}
+	.content .show_goods_pt h2{display: block; font-size: 18px; color: #000; font-family: 'Microsoft Yahei'; background: url(../images/weishang/colico/2.png) no-repeat top left; padding-left: 26px;}
+	.content .show_goods_pt .pic_show{margin-top: 10px; width: 297px; border-right: 1px dashed #d3d3d3; float: left;}
+    .content .show_goods_pt .pic_show img{width: 277px; height: 200px;}
+	.content .show_goods_pt .detail{margin-top: 10px; width: 863px; float: right;}
+	.content .show_goods_pt .detail h1{color: #000; font-size: 16px; font-weight: bold;}
+	.content .show_goods_pt .detail .description{height:126px; display:block; overflow:hidden;}
+	.content .show_goods_pt .detail .description .share{float: right; width:324px; padding-top:15px;}
+	.content .show_goods_pt .detail .description .share .bdshare-button-style0-24 span{float:left; font-size:15px;line-height:35px;padding-right:5px;}
+	.content .show_goods_pt .detail .description .share .bdshare-button-style0-24 a{margin-right: 5px;background: url(../images/weishang/share.png);cursor: pointer;margin-bottom: -8px;opacity: .8;}
+	.content .show_goods_pt .detail .description .share .bdshare-button-style0-24 a.bds_tsina {background-position: 0 0;}
+	.content .show_goods_pt .detail .description .share .bdshare-button-style0-24 a.bds_weixin {background-position: 0 -32px;}
+	.content .show_goods_pt .detail .description .share .bdshare-button-style0-24 a.bds_qzone {background-position: 0 -65px;}
+	.content .show_goods_pt .detail .description .share .bdshare-button-style0-24 a.bds_sqq {background-position: 0 -98px;}
+	.content .show_goods_pt .detail .description .share .bdshare-button-style0-24 a.bds_tqq {background-position: 0 -163px;}
+	.content .show_goods_pt .detail .description .share .bdshare-button-style0-24 a.bds_renren {background-position: 0 -131px;}
+	.content .show_goods_pt .detail .description .share .bdshare-button-style0-24 a.bds_douban {background-position: 0 -196px;}
+	.content .show_goods_pt .detail .description .share .bdshare-button-style0-24 a.bds_fbook {background-position: 0 -226px;}
+	.content .show_goods_pt .detail .description .share .bdshare-button-style0-24 a.bds_more {background-position: 0 -256px;}
+	.content .show_goods_pt .detail .contact{background: #f5f5f5; margin-top: 5px; border-radius:5px;}
+	.content .show_goods_pt .detail .contact ul{padding: 5px 10px; height: 23px;}
+	.content .show_goods_pt .detail .contact ul li{float: left; width: 165px; text-align: center; border-right: 1px dashed #d3d3d3;}
+	.content .show_goods_pt .detail .contact ul li.last{border:none;}
+	.content .show_goods_pt .detail .contact ul li span{font-weight: bold; color: #f76729;}
+	.content .show_goods_pt .detail .contact ul li span a{color: #f76729;}
+	.content .show_goods_pt .bk{margin-top: 10px; border-top: 1px dashed #d3d3d3; float: left; width: 100%; margin-bottom: 10px;}
+	.content .show_goods_pt .more_detail{float: left; padding-top: 10px; padding-bottom: 20px; width: 935px; font-size: 15px;border-right: 1px dashed #d3d3d3; padding-right:10px;line-height: 28px;}
+	.content .show_goods_pt .more_detail img{padding-bottom: 10px; max-width: 720px;}
+	.content .show_goods_pt .right{width: 230px; float: right; }
+	.content .show_goods_pt .right ul.piclist li{margin-bottom: 10px;margin-left: 12px; overflow: hidden}
+	.content .show_goods_pt .right ul.piclist li img{float: left; width: 210px; height:152px;}
+	.content .show_goods_pt .right ul.piclist li a:hover img{}
+	.content .show_goods_pt .right ul.piclist li a span{display: block; text-align: center; width: 210px; background: #16A085; color: #fff; height:175px;}
+	.content .show_goods_pt .right ul.piclist li a:hover span{background: #138D77; color: #fff;}
+	.content .show_goods_pt .right h3{margin-top: 5px; margin-left: 12px; color: #16A085;font-size: 15px; font-weight:bold;}
+	.content .show_goods_pt .right ul.txtlist{padding-left: 10px; padding-bottom: 10px;}
+	.content .show_goods_pt .right ul.txtlist li{list-style:square inside url(../images/weishang/arrow.png); font-size: 13px;}
+	.content .show_goods_pt .right ul.txtlist li a{color: #2a2a2a;}
+	.content .show_goods_pt .right ul.txtlist li a:hover{color: #16A085; text-decoration: none;}
+	/*普通货源展示页结束*/
+}

@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="apple-mobile-web-app-title" content="懒微商">
+  <title>南方周末_聚微商-微商货源网 专注高端 收录高质量货源 全网最大最权威微商货源网 微商创业货源网</title>
+  <meta name="keywords" content="南方周末,南方周末,有,深度,的,报纸,厚实," />
+  <meta name="description" content="南方周末，有深度的报纸，厚实的一份报80后或多或少明白，单单学写作也是很好的。" />
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="MobileOptimized" content="320" />
+  <link rel="stylesheet" href="/statics/css/style.css">
+  <link rel="stylesheet" href="/statics/css/wechat.css">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/statics/images/weishang/icon-144x144.png">
+</head>
+
+<body>
+  <div id="wrap" v-cloak>
+    <div class="head clearfix">
+      <div id="header">
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a href="/">首页</a></li>
+          <li><a href="/goods/">微商货源</a></li>
+          <li class='navlihover'><a href='/wechat/'>微信大全</a></li>
+          <li><a href="/school/">微商学院</a></li>
+          <li class="howto"><a href="/jprzhy/">发布货源</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="content clearfix">
+      <div class="sontype">
+        <ul>
+          <li :class="1 === info.type_id ? 'lihover' : ''"><a title="微信公众号" @click="getListByTypeId(1)">微信公众号</a></li>
+          <li :class="2 === info.type_id ? 'lihover' : ''"><a title="微信群" @click="getListByTypeId(2)">微信群</a></li>
+          <li :class="3 === info.type_id ? 'lihover' : ''"><a title="个人微信号" @click="getListByTypeId(3)">个人微信号</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="content clearfix">
+      <div class="breadcrumb mod">
+        <span>当前位置: <a href='/'>首页</a> > <a href='/wechat/'>微信大全</a> > <a href='/wechat/public/'>微信公众号</a> > <a href="/wechat/public/4.html">南方周末</a></span>
+        <span class="update"><a href="http://wpa.qq.com/msgrd?v=3&uin=1702828444&site=qq&menu=yes" target="_blank">免费发布微信</a></span>
+      </div>
+      <div class="show_wechat mod">
+        <div class="title">
+          <h2>微信详情</h2>
+        </div>
+        <div class="pic_show">
+          <img :src="info.weixin_qrcode">
+        </div>
+        <div class="detail">
+          <h1>{{info.title}}</h1>
+          <div class="description">{{info.title}}介绍：{{info.introduction}}</div>
+          <div class="guanzhu">
+            <p>关注方法1:手机打开 微信 》扫一扫 》扫描二维码即可添加关注！推荐！<br>关注方法2:手机打开 微信 》通讯录 》添加朋友 》输入微信号搜索 》添加成功！ </p>
+          </div>
+          <div class="contact clearfix">
+            <div class="wxhm">
+              <ul>
+                <li>微信号：<span>{{info.weixin_num}}</span></li>
+                <li style="border:none;">人气：<span id="hits">
+                    {{info.popularity}}
+                  </span></li>
+              </ul>
+            </div>
+            <div class="share">
+              <div class="bdsharebuttonbox bdshare-button-style0-24"><span>分享到:</span><a href="#" class="bds_more"
+                  data-cmd="more"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#"
+                  class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_qzone" data-cmd="qzone"
+                  title="分享到QQ空间"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a><a href="#" class="bds_tqq"
+                  data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a
+                  href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a><a href="#" class="bds_fbook"
+                  data-cmd="fbook" title="分享到Facebook"></a></div>
+              <script>
+                window._bd_share_config = {
+                  "common": {
+                    "bdSnsKey": {},
+                    "bdText": "",
+                    "bdMini": "2",
+                    "bdMiniList": false,
+                    "bdPic": "",
+                    "bdStyle": "0",
+                    "bdSize": "24"
+                  },
+                  "share": {}
+                };
+                with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement(
+                    'script')).src =
+                  'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~
+                  (-new Date() / 36e5)];
+              </script>
+            </div>
+          </div>
+        </div>
+        <div class="bk"></div>
+      </div>
+    </div>
+    <div class="content clearfix">
+      <div class="breadcrumb mod"></div>
+      <div class="show_wechat_bottom clearfix">
+        <div class="wechat_title">
+          <h1>推荐微信公众号</h1>
+        </div>
+        <div class="wechat_list clearfix">
+          <ul class="clearfix">
+            <li>
+              <a href="/wechat/public/4.html" target="_blank">
+                <img src="/uploads/150520/1-150520192K9440.jpg" alt="有深度的报纸-南方周末"><span>南方周末</span>
+              </a>
+            </li>
+
+            <div class="ht"></div>
+          </ul>
+          <div class="page"></div>
+        </div>
+        <div class="right">
+          <ul class="piclist">
+            <li>
+              <a href="/goods/zhqt/225.html" target="_blank">
+                <i></i><img src="/uploads/allimg/150608/1-15060Q321190-L.jpg" alt="德国进口卫生巾招代理"><span>德国进口卫生巾招代理</span>
+              </a>
+            </li>
+            <li>
+              <a href="/goods/mrhf/9.html" target="_blank">
+                <i></i><img src="/uploads/150522/1-150522100446226.png" alt="膜西密语正规官方招收实力派懒微商附发货现场"><span>膜西密语正规官方招收实力派懒微商附发货现场</span>
+              </a>
+            </li>
+            <li>
+              <a href="/goods/zhqt/224.html" target="_blank">
+                <i></i><img src="/uploads/allimg/150608/1-15060Q31S60-L.jpg" alt="免费代理轻松月入10万"><span>免费代理轻松月入10万</span>
+              </a>
+            </li>
+            <li>
+              <a href="/goods/zhqt/223.html" target="_blank">
+                <i></i><img src="/uploads/allimg/150608/1-15060Q316090-L.jpg" alt="限量区域代理可年入百万"><span>限量区域代理可年入百万</span>
+              </a>
+            </li>
+            <li>
+              <a href="/goods/zhqt/222.html" target="_blank">
+                <i></i><img src="/uploads/allimg/150608/1-15060Q314020-L.jpg" alt="小熊尼奥3D 口袋动物园～活的识字卡片"><span>小熊尼奥3D
+                  口袋动物园～活的识字卡片</span>
+              </a>
+            </li>
+            <li>
+              <a href="/goods/zhqt/221.html" target="_blank">
+                <i></i><img src="/uploads/allimg/150608/1-15060Q311040-L.jpg" alt="大厂家直招_狐猫客成人微商_限量免费加盟"><span>大厂家直招_狐猫客成人微商_限量免费加盟</span>
+              </a>
+            </li>
+
+          </ul>
+          <h3>微商必读</h3>
+          <ul class="txtlist">
+            <li><a href="/wechat/public/4.html" title="微信公众号-南方周末" target="_blank">南方周末</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+    <div id="floatTools"></div>
+  </div>
+
+  <script src="/statics/js/jquery.min.js" type="text/javascript"></script>
+  <script src="/statics/js/vue.js" type="text/javascript"></script>
+  <script src="/statics/js/index.js" type="text/javascript"></script>
+  <script src="/statics/js/queries/getSingleWeixinInfo.js" type="text/javascript"></script>
+  <script>
+    new Vue({
+      el: '#wrap',
+      data: {
+        id: 0,
+        info: {}
+      },
+      mounted() {
+        this.id = qurl('id')
+        this.getInfo()
+      },
+      methods: {
+        getInfo() {
+          var that = this
+          getSingleWeixinInfo(this.id, function (res) {
+            var resData = res.data.getSingleWeixinInfo
+            if (resData.code === 0) {
+              that.info = resData.data
+              document.title = resData.data.title
+            }
+          })
+        },
+        getListByTypeId(id) {
+          window.location = './index.html?type_id=' + id
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>

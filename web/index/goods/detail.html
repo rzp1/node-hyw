@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="apple-mobile-web-app-title" content="懒微商">
+  <title>AntTeam蚂蚁团队韩国韩货正品直邮专家 一件代发_聚微商-微商货源网 专注高端 收录高质量货源 全网最大最权威微商货源网 微商创业货源网</title>
+  <meta name="keywords" content="美人鱼团队,微商,小金花面膜" />
+  <meta name="description" content="囤货是微商的主流模式，假货满天飞是微商的硬伤，培训也都是教代理如何忽悠别人囤货；我们和你一样厌倦了这种微商盈利方式，让我们回归产品的本质；AntTeam蚂蚁团队开启了不圈钱，卖真货的销售模式，团队成员不用囤货，总公司来囤。也不用发货，总公司直接从韩国直邮到客户手上，你招募的成员，由公司统一培训，绝不忽悠成员囤货，只教如何销售和拓展自己团队的方法" />
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="MobileOptimized" content="320" />
+  <link rel="stylesheet" href="/statics/css/style.css">
+  <link rel="stylesheet" href="/statics/css/goods.css">
+  <script type="text/javascript" src="/statics/js/jquery.min.js"></script>
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/statics/images/weishang/icon-144x144.png">
+</head>
+
+<body>
+  <div id="wrap" v-cloak>
+    <div class="head clearfix">
+      <div id="header">
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a href="/">首页</a></li>
+          <li class='navlihover'><a href='/goods/'>微商货源</a></li>
+          <li><a href="/wechat/">微信大全</a></li>
+          <li><a href="/school/">微商学院</a></li>
+          <li class="howto"><a href="/jprzhy/">发布货源</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="content clearfix">
+      <div class="sontype">
+        <ul>
+          <li v-for="(item,index) in huoyuanTypeList" :class="item.id === info.type_id ? 'lihover' : ''">
+            <a @click="getListByTypeId(item.id)" :title="item.name">{{item.name}}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="content clearfix">
+      <div class="breadcrumb mod">
+        <span>当前位置: <a href='/'>首页</a> > <a href='/goods/'>微商货源</a> > <a href='/goods/mrhf/'>美容护肤</a> > <a href="/goods/mrhf/1.html">AntTeam蚂蚁团队韩国韩货正品直邮专家
+            一件代发</a></span>
+        <span class="update"><a href="http://wpa.qq.com/msgrd?v=3&uin=1702828444&site=qq&menu=yes" target="_blank">免费提交货源</a></span>
+      </div>
+      <div class="show_goods_yx mod">
+        <div class="title">
+          <h2>货源详情</h2>
+        </div>
+        <div class="pic_show">
+          <i></i>
+          <img :src="info.main_img">
+        </div>
+        <div class="detail">
+          <h1>{{info.title}}</h1>
+          <div class="count clearfix">
+            <ul>
+              <li>
+                人气<br>
+                <span id="hits">
+                  {{info.popularity}}
+                </span>
+              </li>
+              <li>
+                微信号<br>
+                <span>{{info.weixin_num}}</span>
+              </li>
+              <li>联系Q Q<br>
+                <a>{{info.qq_num}}</a>
+              </li>
+              <li class="last">货源官网<br><a href="http://www.lanws.com/" target="_blank" rel="nofollow">点击访问</a></li>
+            </ul>
+          </div>
+          <div class="contact">
+            <div class="wxcode">
+              <img :src="info.weixin_qrcode">
+            </div>
+            <div class="contact_info">
+              <p v-html="info.introduction"></p>
+              <!-- <p class="dllc">代理流程：①扫描左侧二维码添加微信②查看微信朋友圈货源③一键转发朋友圈④卖出产品⑤联系供应商下单</p>
+              <p class="gfrz">官方说明：如果发现货源商家有弄虚作假、欺骗等不正当行为，请立即和我们在线客服反馈，我们会第一时间为您处理。</p> -->
+            </div>
+            <div class="share">
+              <div class="bdsharebuttonbox bdshare-button-style0-24">
+                <span>分享到:</span>
+                <a href="#" class="bds_more" data-cmd="more"></a>
+                <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+                <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+                <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+                <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+                <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+              </div>
+              <script>
+                window._bd_share_config = {
+                  "common": {
+                    "bdSnsKey": {},
+                    "bdText": "",
+                    "bdMini": "2",
+                    "bdMiniList": false,
+                    "bdPic": "",
+                    "bdStyle": "0",
+                    "bdSize": "24"
+                  },
+                  "share": {}
+                };
+                with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement(
+                    'script')).src =
+                  'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~
+                  (-new Date() / 36e5)];
+              </script>
+            </div>
+          </div>
+        </div>
+        <div class="bk"></div>
+        <div class="more_detail">
+          <div class="describe" v-html="info.describe">
+          </div>
+          <div class="body_tag">
+            <strong>继续阅读：</strong>
+            <br>
+            <a>上一篇：<span class="link">一件代发</span></a>
+            <br>
+            <a>下一篇：<span class="link">一件代发</span></a>
+          </div>
+          <!-- 多说评论框 start -->
+          <!-- 多说公共JS代码 end -->
+        </div>
+        <div class="right">
+          <ul class="piclist">
+            <li>
+              <a href="/goods/zhqt/225.html" target="_blank">
+                <i></i><img src="/uploads/allimg/150608/1-15060Q321190-L.jpg" alt="德国进口卫生巾招代理"><span>德国进口卫生巾招代理</span>
+              </a>
+            </li>
+            <li>
+              <a href="/goods/mrhf/9.html" target="_blank">
+                <i></i><img src="/uploads/150522/1-150522100446226.png" alt="膜西密语正规官方招收实力派懒微商附发货现场"><span>膜西密语正规官方招收实力派懒微商附发货现场</span>
+              </a>
+            </li>
+            <li>
+              <a href="/goods/zhqt/224.html" target="_blank">
+                <i></i><img src="/uploads/allimg/150608/1-15060Q31S60-L.jpg" alt="免费代理轻松月入10万"><span>免费代理轻松月入10万</span>
+              </a>
+            </li>
+            <li>
+              <a href="/goods/zhqt/223.html" target="_blank">
+                <i></i><img src="/uploads/allimg/150608/1-15060Q316090-L.jpg" alt="限量区域代理可年入百万"><span>限量区域代理可年入百万</span>
+              </a>
+            </li>
+            <li>
+              <a href="/goods/zhqt/222.html" target="_blank">
+                <i></i><img src="/uploads/allimg/150608/1-15060Q314020-L.jpg" alt="小熊尼奥3D 口袋动物园～活的识字卡片"><span>小熊尼奥3D
+                  口袋动物园～活的识字卡片</span>
+              </a>
+            </li>
+            <li>
+              <a href="/goods/zhqt/221.html" target="_blank">
+                <i></i><img src="/uploads/allimg/150608/1-15060Q311040-L.jpg" alt="大厂家直招_狐猫客成人微商_限量免费加盟"><span>大厂家直招_狐猫客成人微商_限量免费加盟</span>
+              </a>
+            </li>
+
+          </ul>
+          <h3>微商必读</h3>
+          <ul class="txtlist">
+            <li><a href="/goods/mrhf/9.html" title="美容护肤-膜西密语正规官方招收实力派懒微商附发货现场" target="_blank">膜西密语正规官方招收实力派</a></li>
+            <li><a href="/goods/mrhf/93.html" title="美容护肤-瑞士 比媂贝尔护肤招募代理商" target="_blank">瑞士 比媂贝尔护肤招募代理商</a></li>
+            <li><a href="/goods/mrhf/92.html" title="美容护肤-思埠正规经销商 官方授权总代理" target="_blank">思埠正规经销商 官方授权总代</a></li>
+            <li><a href="/goods/mrhf/91.html" title="美容护肤-韩国CREAMYS美容皂" target="_blank">韩国CREAMYS美容皂</a></li>
+            <li><a href="/goods/mrhf/90.html" title="美容护肤-安东妍品进口护肤品，不用囤货，一件代发" target="_blank">安东妍品进口护肤品，不用囤</a></li>
+            <li><a href="/goods/mrhf/89.html" title="美容护肤-YOVOA漾美只为你的美——MMUM微商联盟" target="_blank">YOVOA漾美只为你的美——MMUM微</a></li>
+            <li><a href="/goods/mrhf/88.html" title="美容护肤-妆璟面膜招微商代理—奔跑吧兄弟广告支持" target="_blank">妆璟面膜招微商代理—奔跑吧</a></li>
+            <li><a href="/goods/mrhf/87.html" title="美容护肤-15天精致小v脸 v脸原液" target="_blank">15天精致小v脸 v脸原液</a></li>
+            <li><a href="/goods/mrhf/86.html" title="美容护肤-精选速购向全国诚招分销商。进来送一座城。" target="_blank">精选速购向全国诚招分销商。</a></li>
+            <li><a href="/goods/mrhf/85.html" title="美容护肤-奕娇商贸 时时清 微商必选产品" target="_blank">奕娇商贸 时时清 微商必选产品</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+    <div id="floatTools"></div>
+  </div>
+
+  <script src="/statics/js/jquery.min.js" type="text/javascript"></script>
+  <script src="/statics/js/vue.js" type="text/javascript"></script>
+  <script src="/statics/js/index.js" type="text/javascript"></script>
+  <script src="/statics/js/queries/getSingleHuoyuanInfo.js" type="text/javascript"></script>
+  <script src="/statics/js/queries/getHuoyuanTypeList.js" type="text/javascript"></script>
+  <script>
+    new Vue({
+      el: '#wrap',
+      data: {
+        id: 0,
+        info: {},
+        huoyuanTypeList: []
+      },
+      mounted() {
+        this.id = qurl('id')
+        this.getInfo()
+        this.getHuoyuanType()
+      },
+      methods: {
+        getInfo() {
+          var that = this
+          getSingleHuoyuanInfo(this.id, function (res) {
+            var resData = res.data.getSingleHuoyuanInfo
+            if (resData.code === 0) {
+              that.info = resData.data
+              document.title = resData.data.title
+            }
+          })
+        },
+        getHuoyuanType() {
+          var that = this
+          getHuoyuanTypeList({
+            is_recommend: 0,
+            is_huoyuanList: 0
+          }, function (res) {
+            var resData = res.data.getHuoyuanTypeList
+            if (resData.code === 0) {
+              that.huoyuanTypeList = resData.data
+            }
+          })
+        },
+        getListByTypeId(id) {
+          window.location = './index.html?type_id=' + id
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>

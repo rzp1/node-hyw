@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="apple-mobile-web-app-title" content="微货源">
+  <title>微货源-微商货源网 专注高端 收录高质量货源 全网最大最权威微商货源网 微商创业货源网</title>
+  <meta name="description" content="微货源-微商电商货源网，本站专注高端，收录高质量货源，禁止假冒伪劣。本站集合了诚信的微信货源批发商家和公司，优质的微商货源代理，收录海量微信公众号和微信群二维码，提供大量微信营销及微信加人的方法及及微信群互动平台，让初入微商迅速地成长壮大。" />
+  <meta name="keywords" content="微货源,微商货源,微商货源网,微商代理,微商货源代理,微商怎么做,微信营销,微信推广,微信加人技巧,微信公众号,微信群,个人微信,微货源微商货源,微货源货源平台" />
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="MobileOptimized" content="320" />
+  <link rel="stylesheet" href="/statics/css/style.css">
+  <link rel="stylesheet" href="/statics/css/goods.css">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/statics/images/weishang/icon-144x144.png">
+  <style>
+  </style>
+</head>
+
+<body>
+  <div id="wrap" v-cloak>
+    <div class="head clearfix">
+      <div id="header">
+      </div>
+      <div class="nav">
+        <ul>
+          <li class="navlihover"><a href="/">首页</a></li>
+
+          <li><a href="/goods/">微商货源</a></li>
+
+          <li><a href="/wechat/">微信大全</a></li>
+
+          <li><a href="/school/">微商学院</a></li>
+
+          <li class="howto"><a href="/jprzhy/">发布货源</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="content clearfix">
+      <div class="breadcrumb mod">
+        <span>当前位置: <a href="http://www.juws.cn/">首页</a> &gt; 搜索结果 </span>
+        <span class="update"></span>
+      </div>
+      <div class="goods_all clearfix">
+        <div class="goods_list clearfix">
+          <ul>
+            <li class="last" v-for="(item, index) in huoyuanInfoList" @click="toDetail(item.id)">
+              <a>
+                <img :src="item.main_img"></a>
+              <a>
+              <span class="hytitle">{{item.title}}</a>
+              <span class="hyd">{{item.introduction}}</span>
+            </li>
+            <div class="ht"></div>
+          </ul>
+          <div class="page">
+            <li>首页</li>
+            <li v-for="(item, index) in Math.ceil(count/params.limit)" :class="item === params.page ? 'thisclass' : ''">
+              <template v-if="item === params.page">
+                {{item}}
+              </template>
+              <template v-else>
+                <a @click="changePage(item)">{{item}}</a>
+              </template>
+            </li>
+            <li><span class="pageinfo">共 <strong>{{Math.ceil(count/params.limit)}}</strong>页<strong>{{count}}</strong>条</span></li>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+    <div id="floatTools"></div>
+  </div>
+  <script src="/statics/js/jquery.min.js" type="text/javascript"></script>
+  <script src="/statics/js/vue.js" type="text/javascript"></script>
+  <script src="/statics/js/index.js" type="text/javascript"></script>
+  <script src="/statics/js/queries/getHuoyuanInfoList.js" type="text/javascript"></script>
+
+  <script>
+    new Vue({
+      el: '#wrap',
+      data: {
+        huoyuanInfoList: [],
+        count: 0,
+        params: {
+          page: 1,
+          limit: 10,
+          type: 3,
+          recommended_type: 0,
+          type_id: 0,
+          keys: qurl('keys')
+        }
+      },
+      mounted() {
+        this.getHuoyuanInfoList()
+      },
+      methods: {
+        getHuoyuanInfoList() {
+          var that = this
+          getHuoyuanInfoList(this.params, function (res) {
+            var resData = res.data.getHuoyuanInfoList
+            if (resData.code === 0) {
+              that.huoyuanInfoList = resData.data
+              that.count = resData.count
+            }
+          })
+        },
+        toDetail(id) {
+          window.open('/goods/detail.html?id=' + id)
+        }
+      }
+
+    })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+@media screen and (min-width: 1200px){
+	/*文章列表页开始*/
+	.content .article_list{padding-bottom: 20px;}
+	.content .article_list .list_title{border-bottom: 1px solid #d3d3d3; padding-bottom: 2px;}
+	.content .article_list .list_title h1{display: block; font-size: 18px; color: #000; font-family: 'Microsoft Yahei'; background: url(../images/weishang/colico/5.png) no-repeat top left; padding-left: 26px;}
+	.content .article_list .list_content{margin-top: 10px;}
+	.content .article_list .list_content .list_content_pic{width: 1180px; margin-bottom: 10px; border-bottom: 1px dashed #d3d3d3;}
+	.content .article_list .list_content .list_content_pic ul li{margin-bottom: 20px; float: left; width: 570px; margin-right: 40px; cursor: pointer;}
+	.content .article_list .list_content .list_content_pic ul .last{margin-right: 0;}
+	.content .article_list .list_content .list_content_pic ul li img{float: left; width:180px; height:130px;}
+	.content .article_list .list_content .list_content_pic ul li span{margin-left: 20px; font-size: 15px; font-weight: bold;cursor: pointer;}
+	.content .article_list .list_content .list_content_pic ul li p{margin-left: 191px; font-size: 13px; height: 100px; overflow: hidden;}
+	.content .article_list .list_content .list_content_pic ul li a{color: #2a2a2a;}
+	.content .article_list .list_content .list_content_pic ul li:hover{color: #138D77;}
+	.content .article_list .list_content .list_content_words ul{width: 1180px;}
+	.content .article_list .list_content .list_content_words ul li{border-bottom: 1px dashed #d3d3d3; margin-bottom: 10px; float: left; width: 570px; margin-right: 40px;}
+	.content .article_list .list_content .list_content_words ul .last{margin-right: 0;}
+	.content .article_list .list_content .list_content_words ul li a{color: #2a2a2a;}
+	.content .article_list .list_content .list_content_words ul li a:hover{color: #16A085;}
+	.content .article_list .list_content .list_content_words ul li span{float: right;}
+	.content .article_list .list_content .list_content_words .ht{clear: both; border-bottom: 1px  solid #d3d3d3; margin-bottom: 15px; padding-top: 10px;}
+	.content .article_list .list_content .list_content_words .page{width: 100%; float: left;}
+	.content .article_list .list_content .list_content_words .page a{background:#16A085;padding:5px 10px 5px 10px;color:#fff;border:0px solid #EEE;border-radius:15px;}
+	.content .article_list .list_content .list_content_words .page span{background:#16A085;padding:5px 10px 5px 10px;color:#fff;border:0px solid #EEE;border-radius:15px;}
+	.content .article_list .list_content .list_content_words .page a.thisclass{background:#E25242;color:#fff;border:0px solid #EEE;font-weight:bold;}
+	.content .article_list .list_content .list_content_words .page a:hover{background:#138D77;color:#fff;border:0px solid #EEE;}
+	/*文章列表页结束*/
+	/*文章展示页开始*/
+	.content .show_article{}
+	.content .show_article .title h1{display: block; font-size: 18px; color: #000; background: url(../images/weishang/colico/5.png) no-repeat top left; padding-left: 26px;}
+	.content .show_article .info{background: #f0f0f0; text-align: center; padding: 5px; margin-bottom: 10px; border-radius: 3px;}
+	.content .show_article .info span.hot{color:#f76729; font-weight:bold;}
+	.content .show_article .info a{color:#666666;}
+	.content .show_article .info a:hover{color:#666666;}
+	.content .show_article .show_article_content{float: left; padding-top: 10px; padding-bottom: 20px; width:935px;border-right: 1px dashed #d3d3d3; padding-right:10px;}
+	.content .show_article .show_article_content .article{font-size: 15px; line-height: 28px; color: #2a2a2a; font-family: 'Microsoft Yahei';}
+	.content .show_article .show_article_content .article h2{border-left: 4px solid #16A085; padding-left: 8px; font-size: 16px; margin-bottom: 5px; margin-top: 10px; font-weight: bold; color: #16A085;}
+	.content .show_article .show_article_content .article h3{font-size: 15px; font-weight: bold; color: #16A085;}
+	.content .show_article .show_article_content .article img{padding-bottom: 10px;max-width: 920px;}
+	.content .show_article .right{width: 230px; float: right; margin-top:10px;}
+	.content .show_article .right ul.piclist li{margin-bottom: 10px;margin-left: 12px; overflow: hidden}
+	.content .show_article .right ul.piclist li img{float: left; width: 210px; height:152px;}
+	.content .show_article .right ul.piclist li a:hover img{}
+	.content .show_article .right ul.piclist li a span{display: block; text-align: center; width: 210px; background: #16A085; color: #fff; height:175px;}
+	.content .show_article .right ul.piclist li a:hover span{background: #138D77; color: #fff;}
+	.content .show_article .right h3{margin-top: 5px; margin-left: 12px; color: #16A085;font-size: 15px; font-weight:bold;}
+	.content .show_article .right ul.txtlist{padding-left: 10px; padding-bottom: 10px;}
+	.content .show_article .right ul.txtlist li{list-style:square inside url(../images/weishang/arrow.png); font-size: 13px;}
+	.content .show_article .right ul.txtlist li a{color: #2a2a2a;}
+	.content .show_article .right ul.txtlist li a:hover{color: #16A085; text-decoration: none;}
+	/*文章展示页结束*/
+}
+@media screen and (max-width: 1200px){
+	/*文章列表页开始*/
+	.content .article_list{padding-bottom: 20px;}
+	.content .article_list .list_title{border-bottom: 1px solid #d3d3d3; padding-bottom: 2px;}
+	.content .article_list .list_title h1{display: block; font-size: 18px; color: #000;background: url(../images/weishang/colico/5.png) no-repeat top left; padding-left: 26px;}
+	.content .article_list .list_content{margin-top: 10px;}
+	.content .article_list .list_content .list_content_pic{ display:none;}
+	.content .article_list .list_content .list_content_words ul{width:100%;margin: 0 auto;}
+	.content .article_list .list_content .list_content_words ul li{border-bottom: 1px dashed #d3d3d3; margin-bottom: 10px; width:95%;margin: auto 8px;}
+	.content .article_list .list_content .list_content_words ul .last{margin-right: 0;}
+	.content .article_list .list_content .list_content_words ul li a{color: #2a2a2a;}
+	.content .article_list .list_content .list_content_words ul li a:hover{color: #16A085;}
+	.content .article_list .list_content .list_content_words ul li span{float: right;}
+	.content .article_list .list_content .list_content_words .ht{clear: both; border-bottom: 1px  solid #d3d3d3; margin-bottom: 15px; padding-top: 15px;}
+	.content .article_list .list_content .list_content_words .page{width:95%; margin: 0 auto;}
+	.content .article_list .list_content .list_content_words .page a{background:#16A085;padding:0px 9px 0px 9px;color:#fff;border:0px solid #EEE;border-radius:2px;}
+	.content .article_list .list_content .list_content_words .page span{background:#16A085;padding:0px 9px 0px 9px;color:#fff;border:0px solid #EEE;border-radius:2px;}
+	.content .article_list .list_content .list_content_words .page a.thisclass{background:#E25242;color:#fff;border:0px solid #EEE;font-weight:bold;}
+	.content .article_list .list_content .list_content_words .page a:hover{background:#138D77;color:#fff;border:0px solid #EEE;}
+	/*文章列表页结束*/
+	/*文章展示页开始*/
+	.content .show_article{width: 100%;}
+	.content .show_article .title h1{display: block; font-size: 18px; color: #000; background: url(../images/weishang/colico/5.png) no-repeat top left; padding-left: 26px;}
+	.content .show_article .info{background: #f0f0f0; text-align: center; padding: 5px; margin-bottom: 10px; border-radius: 3px;}
+	.content .show_article .info span.hot{color:#f76729; font-weight:bold;}
+	.content .show_article .info a{color:#666666;}
+	.content .show_article .info a:hover{color:#666666;}
+	.content .show_article .show_article_content{ margin: 0 auto;padding-top: 10px; padding-bottom: 20px; width: 95%;}
+	.content .show_article .show_article_content .article{font-size: 15px; line-height: 28px; color: #2a2a2a; font-family: 'Microsoft Yahei';}
+	.content .show_article .show_article_content .article h2{border-left: 4px solid #16A085; padding-left: 8px; font-size: 16px; margin-bottom: 5px; margin-top: 10px; font-weight: bold; color: #16A085;}
+	.content .show_article .show_article_content .article h3{font-size: 15px; font-weight: bold; color: #16A085;}
+	.content .show_article .show_article_content .article img{width: 100%;}
+	.content .show_article .right{width: 97%;margin: auto;}
+	.content .show_article .right ul.piclist li{margin-bottom: 10px;width: 48%;float: left;margin: 3px; overflow: hidden}
+	.content .show_article .right ul.piclist li img{width: 100%;vertical-align:bottom;}
+	.content .show_article .right ul.piclist li a:hover img{}
+	.content .show_article .right ul.piclist li a span{display: block; text-align: center;background: #16A085; color: #fff;}
+	.content .show_article .right ul.piclist li a:hover span{background: #138D77; color: #fff;}
+	.content .show_article .right h3{display: none;}
+	.content .show_article .right ul.txtlist{display: none;}
+	/*文章展示页结束*/
+}

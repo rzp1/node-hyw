@@ -1,0 +1,142 @@
+@media screen and (min-width: 1200px){
+	/*通知*/
+	.content .tips{font-size: 14px; padding-top: 10px; margin-bottom: 5px;}
+	.content .tips span{background: url(../images/weishang/tipsico.png) center left no-repeat; padding-left: 20px;}
+	.content .tips span a{color: #666666;}
+	.content .tips span a:hover{color: #0f9425;}
+	.content .tips .update{width: 100px; text-align: center; float: right; background: none; padding-left: 0;}
+	.content .tips .update a{display: block; color: #fff; background:#16A085; border-radius: 3px;}
+	.content .tips .update a:hover{background: #138D77; color: #fff;}
+/*推荐货源*/
+.content .recommend{}
+.content .recommend .piclist ul{padding-top: 10px;}
+			.content .recommend .piclist .fmimg{width: 190px; height: 230px; float: left;margin-right: 10px;}
+			.content .recommend .piclist ul li{float: left; margin-right:10px;position: relative; overflow: hidden; margin-bottom: 10px;border: 1px solid #d5dcdc;background-color: #ffffff;border-radius: 4px;height: 230px;}
+			.content .recommend .piclist .li_right{position: relative;overflow: hidden; margin-bottom:5px;width: 164px;text-align:left;padding-top: 0px;padding-left: 10px;font-family: Microsoft YaHei;background-color: #FFFFFF;color: #000000;}
+			.content .recommend .piclist .li_dlj{position: relative;overflow: hidden;height: 30px;text-align:left;padding-top: 0px;padding-left: 5px;font-family: Microsoft YaHei;background-color: #FFFFFF;font-size: 15px;color: #EF0808;}
+		 .content .recommend .piclist .li_dlj ul {width:100%;margin:0;}
+			.content .recommend .piclist .li_dlj .left{ width: 115px;height: 30px;border: 0px solid #d5dcdc;float: left;}
+		 .content .recommend .piclist .li_dlj .right{ width: 60px;float: right;border: 0px solid #d5dcdc;margin-right: 20px;color: #FF0033;}
+			.content .recommend .piclist .li_dlj .right a{color: #EF0808;}
+		 .content .recommend .piclist .li_bottom{  position: relative; overflow: hidden;}        
+.content .recommend .piclist ul .last{margin-right: 10px;}
+			.content .recommend .piclist ul li img{border: 0px solid #323841; float: left; width: 168px; height: 150px;padding: 8px 8px;}
+.content .recommend .piclist ul li i{position: absolute; top: 0px; right: 0px; background: url(../images/weishang/yx_ico.png) no-repeat; width:46px; height:46px;}
+.content .recommend .piclist ul li:hover img{border: 0px solid #3FBE72;cursor: pointer;}
+			.content .recommend .piclist ul li span{display: block; text-align: left; background: #FFFFFF; color: #666666; height: 46px;font-size: 15px;padding: 0px 0px;margin: 0px 0px;}
+.content .recommend .piclist ul li:hover span{background: #FFFFFF; color: #16A085;cursor: pointer;}
+.content .recommend .wordslist ul{padding-top: 10px;}
+.content .recommend .wordslist ul li{float: left; margin-right: 20px; margin-bottom: 3px; width: 180px; text-align: center; background: #f5f5f5; font-size: 13px; height: 30px; overflow: hidden;_margin-bottom: -5px;*margin-bottom: -6px;} 
+.content .recommend .wordslist ul .last{margin-right: 0;}
+.content .recommend .wordslist ul li a{display: block; height: 30px; line-height: 30px; color: #2a2a2a; padding: 0px 5px;}
+.content .recommend .wordslist ul li a:hover{background: #16A085; color: #fff;}
+	/*广告*/
+	.content .event_index{width:1180px;; margin: 0 auto 20px; height: 100px;}
+	.content .event_index .event_l{width: 580px; float: left;}
+	.content .event_index .event_r{width: 580px; float: right;}
+	/*排行榜页面*/
+	.content .rank_special{}
+	.content .rank_special .list{padding-top: 10px;}
+	.content .rank_special .list ul li{width: 292px; float: left; margin-right: 35px; overflow: hidden; height: 20px; padding-bottom: 5px; margin-bottom: 5px; font-size: 13px; border-bottom: 1px dashed #d3d3d3;}
+	.content .rank_special .list ul li a{color: #2a2a2a;}
+	.content .rank_special .list ul li a:hover{color: #048f1b;}
+	.content .rank_special .list ul li img{border-radius: 10px; width: 20px; height: 20px;}
+	.content .rank_special .list ul li a span{padding-left: 5px;}
+	.content .rank_special .list ul .last{margin-right: 0;}
+	.content .rank_content{width:1180px; margin: 0 auto; padding-bottom: 10px;}
+	.content .rank_content .title{border-bottom: 1px solid #d3d3d3; padding-bottom: 2px;}
+	.content .rank_content .title h1{display: block; font-size: 18px; color: #000; font-family: 'Microsoft Yahei'; background: url(../images/weishang/colico/8.png) no-repeat top left; padding-left: 26px;}
+	.content .rank_content .list{padding-top: 10px;}
+	.content .rank_content .list ul li{width:268px; float: left; margin-right: 35px; overflow: hidden; height: 20px; padding-bottom: 5px; margin-bottom: 5px; font-size: 13px; border-bottom: 1px dashed #d3d3d3;}
+	.content .rank_content .list ul li a{color: #2a2a2a;}
+	.content .rank_content .list ul li a:hover{color: #048f1b;}
+	.content .rank_content .list ul li img{border-radius: 10px; width: 20px; height: 20px;}
+	.content .rank_content .list ul li a span{padding-left: 5px;}
+	.content .rank_content .list ul .last{margin-right: 0;}
+	/*微商必读*/
+	.content .news{}
+	.content .news .news_col{padding-top: 10px;}
+	.content .news .news_col .news_col_l{float: left;}
+	.content .news .news_col .news_col_l ul{}
+	.content .news .news_col .news_col_l ul li{float: left; margin-right: 20px; width: 180px;}
+	.content .news .news_col .news_col_l ul li img{width: 180px; height: 130px;}
+	.content .news .news_col .news_col_l ul .last{margin-right: 0px;}
+	.content .news .news_col .news_col_l ul li a{color: #2a2a2a; font-size: 13px; line-height:20px; display: block;}
+	.content .news .news_col .news_col_l ul li a:hover{font-size: 13px; text-decoration: none; color: #16A085;}
+	.content .news .news_col .news_col_r{float: right; width: 580px;}
+	.content .news .news_col .news_col_r ul{padding-left: 16px;}
+	.content .news .news_col .news_col_r ul li{list-style:square inside url(../images/weishang/arrow.png); width: 282px; float: left;}
+	.content .news .news_col .news_col_r ul li a{color: #2a2a2a; font-size: 14px;}
+	.content .news .news_col .news_col_r ul li a:hover{font-size: 14px; text-decoration: none; color: #16A085}
+	/*友情链接*/
+	.content .link{padding-bottom: 10px; margin-bottom: 10px;}
+	.content .link .linklist{padding-top: 10px;}
+	.content .link .linklist ul li{float: left; padding-right: 10px;}
+	.content .link .linklist ul li a{color: #2a2a2a;}
+	.content .link .linklist ul li a:hover{color: #16A085;}
+}
+
+@media screen and (max-width: 1200px){
+	/*通知*/
+	.content .tips{display: none;}
+	/*推荐货源*/
+	.content .recommend{}
+	.content .recommend .piclist ul{padding-top: 10px;}
+	.content .recommend .piclist ul li{width:46%;float:left;position: relative; overflow: hidden;text-align: center;margin:1% 2%;}
+	.content .recommend .piclist ul .last{margin-right: 0;}
+	.content .recommend .piclist ul li img{width:100%;vertical-align: bottom;}
+	.content .recommend .piclist ul li i{position: absolute; top: 0px; right: 0px; background: url(../images/weishang/yx_ico.png) no-repeat; width:46px; height:46px;}
+	.content .recommend .piclist ul li span{display: inline-block; text-align: center; width: 100%; background: #323841; color: #fff;font-size: 12px;overflow: hidden;height: 2em;}
+	.content .recommend .piclist ul li:hover span{background: #16A085; color: #fff;}
+	.content .recommend .wordslist{width:100%;}
+	.content .recommend .wordslist ul{padding-top: 10px;}
+	.content .recommend .wordslist ul li{text-align: left; background: #ededed; font-size: 12px;overflow: hidden;width: 46%;margin:1% 2%;float: left;} 
+	.content .recommend .wordslist ul .last{}
+	.content .recommend .wordslist ul li a{display: block; height: 30px; line-height: 30px; color: #2a2a2a; padding: 0px 5px;}
+	.content .recommend .wordslist ul li a:hover{background: #16A085; color: #fff;}
+	/*广告*/
+	.content .event_index{width: 100%; margin: 0 auto 20px; height: 100px;}
+	.content .event_index .event_l{width: 100%; float: left; margin-bottom: 2%;}
+	.content .event_index .event_l img{width: 100%;}
+	.content .event_index .event_r{width: 100%; float: right; margin-bottom: 20px;}
+	.content .event_index .event_r img{width: 100%;}
+	/*排行榜页面*/
+	.content .rank_special{}
+	.content .rank_special .list{padding-top: 10px;}
+	.content .rank_special .list ul li{overflow: hidden;font-size: 13px; border-bottom: 1px dashed #d3d3d3;width: 90%;padding:0 5%;margin-bottom: 5px;}
+	.content .rank_special .list ul li a{color: #2a2a2a;}
+	.content .rank_special .list ul li a:hover{color: #048f1b;}
+	.content .rank_special .list ul li img{border-radius: 10px; width: 20px; height: 20px;}
+	.content .rank_special .list ul li a span{padding-left: 5px;}
+	.content .rank_special .list ul .last{margin-right: 0;}
+	.content .rank_content{width:100%; margin: 0 auto; padding-bottom: 10px;}
+	.content .rank_content .title{border-bottom: 1px solid #d3d3d3; padding-bottom: 2px;}
+	.content .rank_content .title h1{display: block; font-size: 18px; color: #000; font-family: "Microsoft Yahei"; background: url(../images/weishang/colico/8.png) no-repeat top left; padding-left: 26px;}
+	.content .rank_content .list{padding-top: 10px;}
+	.content .rank_content .list ul li{width: 45%;overflow: hidden;margin:1% 2.5%;float: left;height: 2em; font-size: 12px; border-bottom: 1px dashed #d3d3d3;}
+	.content .rank_content .list ul li a{color: #2a2a2a;}
+	.content .rank_content .list ul li a:hover{color: #048f1b;}
+	.content .rank_content .list ul li img{border-radius: 10px; width: 20px; height: 20px;}
+	.content .rank_content .list ul li a span{padding-left: 5px;}
+	/*微商必读*/
+	.content .news{}
+	.content .news .news_col{padding-top: 10px;}
+	.content .news .news_col .news_col_l{width: 100%;}
+	.content .news .news_col .news_col_l ul{}
+	.content .news .news_col .news_col_l ul li{width:29%;position: relative; overflow: hidden;margin: 2%;float: left;}
+	.content .news .news_col .news_col_l ul li img{width:100%;}
+	.content .news .news_col .news_col_l ul .last{margin-left:1%;}
+	.content .news .news_col .news_col_l ul li a{color: #2a2a2a; font-size: 13px; display: block;}
+	.content .news .news_col .news_col_l ul li a:hover{font-size: 13px; text-decoration: none; color: #16A085;}
+	.content .news .news_col .news_col_r{}
+	.content .news .news_col .news_col_r ul{}
+	.content .news .news_col .news_col_r ul li{list-style:square inside url(../images/weishang/arrow.png);width: 45%;overflow: hidden;margin:1% 2%;float: left;height: 2em; font-size: 12px; border-bottom: 1px dashed #d3d3d3;}
+	.content .news .news_col .news_col_r ul li a{color: #2a2a2a; font-size: 14px;}
+	.content .news .news_col .news_col_r ul li a:hover{font-size: 14px; text-decoration: none; color: #16A085}
+	/*友情链接*/
+	.content .link{padding-bottom: 10px; margin-bottom: 10px;}
+	.content .link .linklist{padding-top: 10px;width: 100%;margin: 0 2% 2%;}
+	.content .link .linklist ul li{float: left; padding-right: 10px;}
+	.content .link .linklist ul li a{color: #2a2a2a;}
+	.content .link .linklist ul li a:hover{color: #048f1b;}
+}
